@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState(false);
 
   return (
     <div className="navbar bg-white py-5 px-5">
@@ -94,19 +94,28 @@ function Navbar() {
 
       <div className="navbar-end space-x-4">
         <div
-          tabIndex={0}
-          role="button"
-          className="btn btn-ghost btn-circle avatar"
+          className={`tooltip tooltip-bottom ${user ? "" : "hidden"}`}
+          data-tip={user}
         >
-          <div className="w-10 rounded-full">
-            <img
-              alt="Tailwind CSS Navbar component"
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-            />
+          {/* <button className="btn">Hover me</button> */}
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost btn-circle avatar"
+          >
+            <Link to="/profile" className="w-10 rounded-full">
+              <img
+                alt="Tailwind CSS Navbar component"
+                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                className="rounded-full"
+              />
+            </Link>
           </div>
         </div>
         <Link className={`btn ${user ? "hidden" : ""}`}>Sign In</Link>
-        <Link className={`btn ${user ? "" : "hidden"}`}>Log Out</Link>
+        <Link className={`btn ${user ? "" : "hidden"} btn-outline btn-error`}>
+          Log Out
+        </Link>
       </div>
     </div>
   );
