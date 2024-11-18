@@ -8,14 +8,14 @@ function Footer() {
         <div>
           <img src="footer-logo.png" alt="" className="w-48" />
         </div>
-        <div className="font-bold text-lg absolute top-44">
+        <div className="font-bold text-lg absolute top-44 lora">
           WildPursuit Adventures Ltd.
           <br />
-          <p className="font-normal text-base">
+          <p className="font-normal text-base raleway">
             Inspiring sustainable journeys for nature lovers everywhere.
           </p>
         </div>
-        <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+        <p className="raleway">Copyright © 2024- All right reserved</p>
       </aside>
       <div className="grid grid-flow-col gap-4">
         <Link to="https://www.facebook.com/itstohahossain/">

@@ -67,18 +67,6 @@ function Navbar() {
           </li>
           <li>
             <NavLink
-              to="/update"
-              className={({ isActive }) =>
-                isActive
-                  ? " bg-deepOceanBlue text-base font-semibold btn shadow-md outline-none rounded-md text-white"
-                  : "text-base btn bg-white border-none shadow-none hover:bg-icyBlue text-black"
-              }
-            >
-              Update Profile
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="/profile"
               className={({ isActive }) =>
                 isActive
@@ -86,7 +74,19 @@ function Navbar() {
                   : "text-base btn bg-white border-none shadow-none hover:bg-icyBlue text-black"
               }
             >
-              Categories
+              Profile
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/adventures"
+              className={({ isActive }) =>
+                isActive
+                  ? " bg-deepOceanBlue text-base font-semibold btn shadow-md outline-none rounded-md text-white"
+                  : "text-base btn bg-white border-none shadow-none hover:bg-icyBlue text-black"
+              }
+            >
+              Adventures
             </NavLink>
           </li>
         </ul>

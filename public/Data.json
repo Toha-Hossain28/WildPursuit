@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "adventureTitle": "Mountain Trekking in the Alps",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "A thrilling adventure to the peaks of the Alps, where the crisp air and stunning views await. Experience the breathtaking beauty of snow-capped mountains, crystal-clear lakes, and alpine meadows. This trek offers not only stunning views but also an opportunity to immerse yourself in the region's rich culture and history, with visits to charming mountain villages.",
+    "adventureCost": 1200,
+    "bookingAvailability": "Available",
+    "location": "Alps, Switzerland",
+    "duration": "7 days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Guided Tour", "Meals", "Camping Gear"],
+    "ecoFriendlyFeatures": [
+      "Carbon offset for travel",
+      "Eco-friendly equipment",
+      "Local sourcing of food"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": ["Bring warm clothing", "Physical fitness required"]
+  },
+  {
+    "id": 2,
+    "adventureTitle": "Coral Reef Diving",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Ocean Dives",
+    "shortDescription": "Dive into the vibrant coral reefs and explore the underwater wonders of the ocean. This dive experience takes you into one of the most diverse ecosystems on the planet, where you’ll encounter vibrant marine life, crystal-clear waters, and an opportunity to witness the delicate balance of the underwater world. As you explore the reef, you'll learn about coral conservation efforts and how you can help preserve this incredible ecosystem.",
+    "adventureCost": 950,
+    "bookingAvailability": "Available",
+    "location": "Great Barrier Reef, Australia",
+    "duration": "5 days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Diving Gear", "Marine Biologist Guide", "Meals"],
+    "ecoFriendlyFeatures": [
+      "No-touch diving policies",
+      "Coral restoration activities",
+      "Sustainable diving practices"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Must be able to swim",
+      "Certification required for diving"
+    ]
+  },
+  {
+    "id": 3,
+    "adventureTitle": "Safari in Africa",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Wildlife Safaris",
+    "shortDescription": "Embark on a safari in the heart of Africa to see majestic wildlife in their natural habitats. This unforgettable adventure takes you deep into the Serengeti, where you’ll witness the awe-inspiring Great Migration, encounter lions, elephants, and other African wildlife, and learn about the region's conservation efforts. Experience the untamed beauty of Africa's wilderness and the tranquility of its vast landscapes.",
+    "adventureCost": 2200,
+    "bookingAvailability": "Limited Availability",
+    "location": "Serengeti, Tanzania",
+    "duration": "10 days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Safari Vehicle", "Meals", "Park Entrance Fees"],
+    "ecoFriendlyFeatures": [
+      "Wildlife conservation efforts",
+      "Low-impact travel practices",
+      "Eco-friendly accommodations"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Bring binoculars and camera",
+      "Respect wildlife rules"
+    ]
+  },
+  {
+    "id": 4,
+    "adventureTitle": "Forest Expedition in Amazon",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "A deep dive into the heart of the Amazon rainforest, exploring its unique ecosystem and wildlife. This expedition allows you to immerse yourself in one of the most biodiverse places on Earth, with encounters with rare species of plants, animals, and indigenous tribes. You’ll trek through dense jungle, camp under the stars, and learn about the critical role the Amazon plays in global climate regulation and biodiversity conservation.",
+    "adventureCost": 1500,
+    "bookingAvailability": "Available",
+    "location": "Amazon Rainforest, Brazil",
+    "duration": "8 days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Local Guide", "Camping Gear", "Meals"],
+    "ecoFriendlyFeatures": [
+      "Conservation-focused tours",
+      "Minimal waste policies",
+      "Wildlife protection initiatives"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Wear sturdy shoes",
+      "Be prepared for humid conditions"
+    ]
+  },
+  {
+    "id": 5,
+    "adventureTitle": "Camping in the Rockies",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Camping Retreats",
+    "shortDescription": "Escape into the serene beauty of the Rocky Mountains with this immersive camping experience. Surrounded by towering peaks and alpine lakes, you’ll disconnect from the hustle and bustle of everyday life and reconnect with nature. This camping trip combines hiking, wildlife watching, and stargazing, giving you a chance to experience the rugged beauty of one of North America’s most iconic landscapes.",
+    "adventureCost": 800,
+    "bookingAvailability": "Available",
+    "location": "Rocky Mountains, Canada",
+    "duration": "5 days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Camping Gear", "Meals", "Hiking Guide"],
+    "ecoFriendlyFeatures": [
+      "Leave no trace camping",
+      "Eco-friendly accommodations",
+      "Local sourcing of food"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Bring warm clothing and boots",
+      "Be prepared for varying weather"
+    ]
+  },
+  {
+    "id": 6,
+    "adventureTitle": "Desert Exploration in Sahara",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Desert Exploration",
+    "shortDescription": "Venture into the vast, golden sands of the Sahara Desert for a once-in-a-lifetime adventure. Experience the endless dunes, visit ancient oases, and discover hidden desert villages. This journey includes camel rides, stargazing in the quiet of the desert night, and learning about the desert’s ecosystem and the nomadic tribes that have thrived there for centuries.",
+    "adventureCost": 1100,
+    "bookingAvailability": "Available",
+    "location": "Sahara Desert, Morocco",
+    "duration": "6 days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Camel Ride", "Meals", "Desert Guide"],
+    "ecoFriendlyFeatures": [
+      "Solar-powered equipment",
+      "Sustainable travel practices",
+      "Support for local communities"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Bring sunglasses and sunscreen",
+      "Prepare for extreme temperature changes"
+    ]
+  },
+  {
+    "id": 7,
+    "adventureTitle": "Mangrove Forest Expedition",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Mangrove Forest Expeditions",
+    "shortDescription": "Explore the tranquil and vital mangrove forests in this peaceful yet enriching expedition. Paddle through winding waterways, observe diverse wildlife such as migratory birds, and learn about the role of mangroves in preserving coastal ecosystems. This adventure offers a mix of kayaking and eco-education, emphasizing the importance of protecting these invaluable coastal habitats.",
+    "adventureCost": 950,
+    "bookingAvailability": "Available",
+    "location": "Kuching, Malaysia",
+    "duration": "4 days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Kayak Rental", "Meals", "Eco-Tour Guide"],
+    "ecoFriendlyFeatures": [
+      "Ecosystem restoration efforts",
+      "Minimal impact activities",
+      "Wildlife protection initiatives"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear waterproof clothing",
+      "Bring insect repellent"
+    ]
+  },
+  {
+    "id": 8,
+    "adventureTitle": "River Rafting in the Amazon",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "River Adventures",
+    "shortDescription": "Embark on an adrenaline-filled river rafting adventure down the Amazon River. Navigate rapids, discover the river’s rich biodiversity, and encounter indigenous wildlife along the way. This adventure allows you to explore one of the world’s most famous rivers while learning about its ecological importance, conservation efforts, and the importance of keeping the Amazon’s waterways clean.",
+    "adventureCost": 1300,
+    "bookingAvailability": "Available",
+    "location": "Amazon River, Brazil",
+    "duration": "6 days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Rafting Gear", "Meals", "Local Guide"],
+    "ecoFriendlyFeatures": [
+      "Wildlife monitoring programs",
+      "Sustainable rafting equipment",
+      "Educational outreach about river conservation"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Must know how to swim",
+      "Prepare for rugged conditions"
+    ]
+  },
+  {
+    "id": 9,
+    "adventureTitle": "Wildlife Safari in Serengeti",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Wildlife Safaris",
+    "shortDescription": "Embark on a thrilling wildlife safari in the world-renowned Serengeti National Park. Experience the annual wildebeest migration, witness lions in their natural habitat, and observe the diverse flora and fauna of Africa’s iconic savanna. This adventure offers game drives with expert guides, ensuring an unforgettable experience while learning about wildlife conservation efforts in the region.",
+    "adventureCost": 1500,
+    "bookingAvailability": "Available",
+    "location": "Serengeti, Tanzania",
+    "duration": "7 days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Safari Vehicle", "Meals", "Park Fees"],
+    "ecoFriendlyFeatures": [
+      "Eco-friendly safari vehicles",
+      "Wildlife conservation education",
+      "Partnerships with local communities"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Bring binoculars and a camera",
+      "Respect wildlife and stay in the vehicle at all times"
+    ]
+  },
+  {
+    "id": 10,
+    "adventureTitle": "Mountain Biking in the Andes",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Challenge yourself with a mountain biking expedition through the breathtaking Andes. Ride through rugged mountain passes, scenic valleys, and remote villages while soaking in the panoramic views of snow-capped peaks. This journey is perfect for thrill-seekers who want to test their skills and endurance while embracing the beauty of South America's mountain landscape.",
+    "adventureCost": 1200,
+    "bookingAvailability": "Available",
+    "location": "Andes Mountains, Peru",
+    "duration": "5 days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Mountain Bike", "Meals", "Support Vehicle"],
+    "ecoFriendlyFeatures": [
+      "Carbon offset programs",
+      "Low-impact biking trails",
+      "Local community engagement"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Must have biking experience",
+      "Wear sturdy shoes and gloves"
+    ]
+  },
+  {
+    "id": 11,
+    "adventureTitle": "Ocean Dive in Great Barrier Reef",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Ocean Dives",
+    "shortDescription": "Explore the vibrant underwater world of the Great Barrier Reef. This scuba diving adventure takes you through coral gardens, marine life hotspots, and crystal-clear waters. You’ll dive with expert instructors who will guide you through one of the most biodiverse ecosystems on the planet. The adventure emphasizes the importance of coral reef conservation and marine protection efforts.",
+    "adventureCost": 1300,
+    "bookingAvailability": "Available",
+    "location": "Great Barrier Reef, Australia",
+    "duration": "5 days",
+    "adventureLevel": "Beginner to Advanced",
+    "includedItems": ["Scuba Gear", "Meals", "Diving Instructor"],
+    "ecoFriendlyFeatures": [
+      "Coral reef conservation",
+      "Marine life education",
+      "Eco-friendly diving equipment"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Bring swimwear and sunscreen",
+      "Must be comfortable in water"
+    ]
+  },
+  {
+    "id": 12,
+    "adventureTitle": "Forest Trekking in the Amazon",
+    "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "Venture deep into the Amazon Rainforest for an unforgettable trekking experience. Hike through dense jungles, cross rivers, and encounter the rich biodiversity of the world’s largest tropical forest. This expedition includes expert guides who will share their knowledge of the rainforest’s flora, fauna, and the vital role it plays in global climate regulation.",
+    "adventureCost": 1000,
+    "bookingAvailability": "Available",
+    "location": "Amazon Rainforest, Brazil",
+    "duration": "7 days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Camping Gear", "Meals", "Rainforest Guide"],
+    "ecoFriendlyFeatures": [
+      "Eco-friendly trekking gear",
+      "Wildlife preservation efforts",
+      "Sustainable tourism practices"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Bring waterproof clothing",
+      "Be prepared for intense humidity"
+    ]
+  }
+]

@@ -9,7 +9,7 @@ function MainLayout() {
       <section className="">
         <Navbar />
       </section>
-      <section className="min-h-[calc(100vh-360px)]">
+      <section className="min-h-[calc(100vh-450px)]">
         <Outlet />
       </section>
       {/* footer */}
