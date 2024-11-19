@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import useDynamicTitle from "../useDynamicTitle";
+import Testimonials from "../components/Testimonials";
+import WhyUs from "../components/WhyUs";
 
 function MainLayout() {
   const data = useLoaderData();
@@ -19,6 +21,12 @@ function MainLayout() {
       </section>
       <section className="min-h-[calc(100vh-380px)]">
         <Outlet />
+      </section>
+      <section>
+        <Testimonials />
+      </section>
+      <section>
+        <WhyUs />
       </section>
       {/* footer */}
       <section>

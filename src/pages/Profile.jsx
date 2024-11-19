@@ -1,12 +1,13 @@
 import { useContext } from "react";
 import { AuthContext } from "../Context/AuthProvider";
 import { Link } from "react-router-dom";
+import "animate.css";
 
 function Profile() {
   const { user, userSignOut } = useContext(AuthContext);
   return (
     <div className="mx-5">
-      <h1 className="text-3xl font-bold text-center mt-16">
+      <h1 className="text-3xl font-bold text-center mt-16 animate__bounceIn animate__animated animate__repeat-3">
         Welcome, {user?.displayName} 😄
       </h1>
       <div className="max-w-md mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">

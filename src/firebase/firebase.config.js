@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCipx9M3bjrA3UErb5CQ_I15k_NCxkT-eA",
-  authDomain: "toha-a9.firebaseapp.com",
-  projectId: "toha-a9",
-  storageBucket: "toha-a9.firebasestorage.app",
-  messagingSenderId: "790465376138",
-  appId: "1:790465376138:web:a365ebf5cb3d8617022273",
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_auth_domain,
+  projectId: import.meta.env.VITE_project_id,
+  storageBucket: import.meta.env.VITE_storage_bucket,
+  messagingSenderId: import.meta.env.VITE_VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase
