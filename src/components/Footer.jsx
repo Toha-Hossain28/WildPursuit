@@ -4,7 +4,7 @@ import logo from "../assets/footer-logo.png";
 
 function Footer() {
   return (
-    <footer className="footer footer-center bg-white p-10 pt-0 relative text-black">
+    <footer className="footer footer-center bg-white pt-0 relative text-black">
       <aside>
         <div>
           <img src={logo} alt="" className="w-48" />

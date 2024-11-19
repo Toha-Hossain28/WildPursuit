@@ -5,14 +5,15 @@ import "./index.css";
 import MainLayout from "./layout/MainLayout";
 import ErrorPage from "./pages/ErrorPage";
 import AuthLayout from "./layout/AuthLayout";
-import Login from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import AuthProvider from "./Context/AuthProvider";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    loader: () => fetch("/Data.json"),
     errorElement: <ErrorPage />,
     children: [
       {
@@ -47,6 +48,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>
 );

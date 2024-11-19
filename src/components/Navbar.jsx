@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../Context/AuthProvider";
 
 function Navbar() {
-  const [user, setUser] = useState(false);
-
+  const { user } = useContext(AuthContext);
   return (
-    <div className="navbar bg-white py-5 px-5">
+    <div className="navbar bg-white lg:py-5 lg:px-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,25 +29,44 @@ function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? " bg-deepOceanBlue text-base font-semibold btn shadow-md outline-none rounded-md text-white"
+                    : "text-base btn bg-white border-none shadow-none hover:bg-icyBlue text-black"
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <NavLink
+                to="/profile"
+                className={({ isActive }) =>
+                  isActive
+                    ? " bg-deepOceanBlue text-base font-semibold btn shadow-md outline-none rounded-md text-white"
+                    : "text-base btn bg-white border-none shadow-none hover:bg-icyBlue text-black"
+                }
+              >
+                Profile
+              </NavLink>
             </li>
             <li>
-              <a>Item 3</a>
+              <NavLink
+                to="/adventures"
+                className={({ isActive }) =>
+                  isActive
+                    ? " bg-deepOceanBlue text-base font-semibold btn shadow-md outline-none rounded-md text-white"
+                    : "text-base btn bg-white border-none shadow-none hover:bg-icyBlue text-black"
+                }
+              >
+                Adventures
+              </NavLink>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost lg:text-3xl font-extrabold  lora text-evergreen">
+        <a className="btn btn-ghost lg:text-3xl text-xl font-extrabold p-0  lora text-evergreen">
           WildPursuit
         </a>
       </div>
@@ -95,7 +114,7 @@ function Navbar() {
       <div className="navbar-end space-x-4">
         <div
           className={`tooltip tooltip-bottom ${user ? "" : "hidden"}`}
-          data-tip={user}
+          data-tip={user?.email}
         >
           {/* <button className="btn">Hover me</button> */}
           <div
@@ -112,10 +131,19 @@ function Navbar() {
             </Link>
           </div>
         </div>
-        <Link to="/auth/signin" className={`btn ${user ? "hidden" : ""}`}>
+        <Link
+          to="/auth/signin"
+          className={`btn ${
+            user ? "hidden" : ""
+          } text-white bg-deepOceanBlue hover:bg-icyBlue hover:text-black`}
+        >
           Sign In
         </Link>
-        <Link className={`btn ${user ? "" : "hidden"} btn-outline btn-error`}>
+        <Link
+          className={`btn ${
+            user ? "" : "hidden"
+          }  text-white bg-deepOceanBlue hover:bg-icyBlue hover:text-black`}
+        >
           Log Out
         </Link>
       </div>
