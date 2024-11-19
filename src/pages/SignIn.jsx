@@ -2,9 +2,10 @@ import { useContext } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
+import { FaGoogle } from "react-icons/fa";
 
 function SignIn() {
-  const { user, setUser, userSignIn } = useContext(AuthContext);
+  const { user, setUser, userSignIn, googleLogin } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const handleSignIn = (e) => {
@@ -26,6 +27,13 @@ function SignIn() {
         // console.log(errorMessage);
         toast.error("Login Failed!! Please,try again.");
       });
+  };
+
+  const handleGoogle = () => {
+    googleLogin().then((result) => {
+      setUser(result.user);
+      navigate("/");
+    });
   };
 
   return (
@@ -67,9 +75,12 @@ function SignIn() {
               </a>
             </label>
           </div>
-          <div className="form-control mt-6">
+          <div className="form-control mt-6 space-y-2">
             <button className="btn bg-icyBlue hover:bg-deepOceanBlue text-black hover:text-white">
               Sign In
+            </button>
+            <button onClick={handleGoogle} className="btn">
+              Sign in using <FaGoogle />
             </button>
           </div>
           <div className="text-center text-sm mt-2">

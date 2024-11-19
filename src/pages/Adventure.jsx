@@ -1,4 +1,5 @@
 import { useLoaderData, useNavigate, useParams } from "react-router-dom";
+import MeetBtn from "../components/MeetBtn";
 
 // const obj = {
 //   id: 1,
@@ -76,14 +77,17 @@ function Adventure() {
           <p className="text-base text-gray-600  ">
             <span className="font-bold">Category:</span> {categoryName}
           </p>
-          <button
-            className="bg-evergreen text-white py-2 px-4 rounded-lg hover:bg-icyBlue transition duration-300 ease-in-out"
-            onClick={() => {
-              navigate(-1);
-            }}
-          >
-            Go Back
-          </button>
+          <div className="space-x-4 flex justify-center">
+            <MeetBtn />
+            <button
+              className="bg-error py-2 px-4 rounded-lg btn"
+              onClick={() => {
+                navigate(-1);
+              }}
+            >
+              Go Back
+            </button>
+          </div>
         </div>
       </div>
     </div>
