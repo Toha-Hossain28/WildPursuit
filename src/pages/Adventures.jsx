@@ -3,7 +3,7 @@ import Card from "../components/Card";
 
 function Adventures() {
   const data = useLoaderData();
-  console.log(data);
+  // console.log(data);
   return (
     <div className="my-10 flex flex-col justify-center items-center mx-5">
       <h1 className="text-4xl font-bold text-evergreen mb-7 mt-7">

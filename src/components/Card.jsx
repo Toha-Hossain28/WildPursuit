@@ -21,7 +21,10 @@ function Card({ item }) {
           ))}
         </div>
         <div className="">
-          <Link to={`/adventures/${id}`} className="btn">
+          <Link
+            to={`/adventures/${id}`}
+            className="btn bg-evergreen text-white hover:text-black"
+          >
             Explore Now
           </Link>
         </div>

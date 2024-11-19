@@ -3,7 +3,6 @@ import { auth, AuthContext } from "../Context/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { updateProfile } from "firebase/auth";
 import toast, { Toaster } from "react-hot-toast";
-
 function UpdateProfile() {
   const { user, updateUserProfile } = useContext(AuthContext);
   const [name, setName] = useState(user?.displayName || "");
@@ -27,23 +26,23 @@ function UpdateProfile() {
   };
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center mx-5">
       <div>
         <Toaster />
       </div>
-      <div className="w-full max-w-md bg-white rounded-lg shadow-xl p-6 my-10">
-        <h1 className="text-2xl font-bold text-center text-gray-800">
+      <div className="w-full max-w-md bg-deepOceanBlue rounded-lg shadow-xl p-6 my-10">
+        <h1 className="text-2xl font-bold text-center text-white">
           Update Profile
         </h1>
         <form onSubmit={handleUpdate} className="mt-6">
           {/* Name Input */}
-          <div className="form-control mb-4">
+          <div className="form-control mb-4 ">
             <label className="label">
-              <span className="label-text font-medium">Name</span>
+              <span className="label-text font-medium text-white">Name</span>
             </label>
             <input
               type="text"
-              className="input input-bordered w-full"
+              className="input input-bordered w-full bg-icyBlue"
               placeholder="Enter your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -54,11 +53,13 @@ function UpdateProfile() {
           {/* Photo URL Input */}
           <div className="form-control mb-4">
             <label className="label">
-              <span className="label-text font-medium">Photo URL</span>
+              <span className="label-text font-medium text-white">
+                Photo URL
+              </span>
             </label>
             <input
               type="text"
-              className="input input-bordered w-full"
+              className="input input-bordered w-full bg-icyBlue"
               placeholder="Enter photo URL"
               value={photoURL}
               onChange={(e) => setPhotoURL(e.target.value)}

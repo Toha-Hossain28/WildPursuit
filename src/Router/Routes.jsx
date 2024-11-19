@@ -23,14 +23,6 @@ const router = createBrowserRouter([
         element: <Adventures />,
         loader: () => fetch("/Data.json"),
       },
-      {
-        path: "profile",
-        element: <h1>profile</h1>,
-      },
-      {
-        path: "update",
-        element: <h1>update</h1>,
-      },
     ],
   },
   {
@@ -45,14 +37,14 @@ const router = createBrowserRouter([
         path: "signup",
         element: <SignUp />,
       },
-      {
-        path: "profile",
-        element: (
-          <PrivateRoute>
-            <Profile />,
-          </PrivateRoute>
-        ),
-      },
+      // {
+      //   path: "profile",
+      //   element: (
+      //     <PrivateRoute>
+      //       <Profile />,
+      //     </PrivateRoute>
+      //   ),
+      // },
     ],
   },
   {
@@ -78,7 +70,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "adventures/",
+    path: "adventures",
     element: <AdventureLayout />,
     children: [
       {

@@ -1,8 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import useDynamicTitle from "../useDynamicTitle";
 
 function AuthLayout() {
+  useDynamicTitle();
+
   return (
     <div>
       <section>

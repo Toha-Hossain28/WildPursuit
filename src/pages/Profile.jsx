@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Profile() {
   const { user, userSignOut } = useContext(AuthContext);
   return (
-    <div className="">
+    <div className="mx-5">
       <h1 className="text-3xl font-bold text-center mt-16">
         Welcome, {user?.displayName} 😄
       </h1>

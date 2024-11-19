@@ -2,10 +2,11 @@ import { Outlet, useLoaderData } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
+import useDynamicTitle from "../useDynamicTitle";
 
 function MainLayout() {
   const data = useLoaderData();
-
+  useDynamicTitle();
   return (
     <div>
       {/* navbar */}
