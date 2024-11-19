@@ -1,7 +1,7 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Slider from "../components/Slider";
+import Banner from "../components/Banner";
 
 function MainLayout() {
   const data = useLoaderData();
@@ -13,8 +13,9 @@ function MainLayout() {
       <section className="">
         <Navbar />
       </section>
-      <section className="my-10 bg-icyBlue">
-        <Slider data={data} />
+      {/* banner */}
+      <section className="">
+        <Banner data={data} />
       </section>
       <section className="min-h-[calc(100vh-380px)]">
         <Outlet />

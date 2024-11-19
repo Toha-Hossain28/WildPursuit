@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
 
 function Navbar() {
-  const { user } = useContext(AuthContext);
+  const { user, setUser, userSignOut } = useContext(AuthContext);
   return (
     <div className="navbar bg-white lg:py-5 lg:px-5">
       <div className="navbar-start">
@@ -139,13 +139,14 @@ function Navbar() {
         >
           Sign In
         </Link>
-        <Link
+        <button
+          onClick={userSignOut}
           className={`btn ${
             user ? "" : "hidden"
           }  text-white bg-deepOceanBlue hover:bg-icyBlue hover:text-black`}
         >
-          Log Out
-        </Link>
+          Sign Out
+        </button>
       </div>
     </div>
   );

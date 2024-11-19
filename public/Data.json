@@ -11,11 +11,7 @@
     "duration": "7 days",
     "adventureLevel": "Intermediate",
     "includedItems": ["Guided Tour", "Meals", "Camping Gear"],
-    "ecoFriendlyFeatures": [
-      "Carbon offset for travel",
-      "Eco-friendly equipment",
-      "Local sourcing of food"
-    ],
+    "ecoFriendlyFeatures": ["Carbon offset", "Eco gear", "Local food"],
     "maxGroupSize": 12,
     "specialInstructions": ["Bring warm clothing", "Physical fitness required"]
   },
@@ -32,9 +28,9 @@
     "adventureLevel": "Beginner",
     "includedItems": ["Diving Gear", "Marine Biologist Guide", "Meals"],
     "ecoFriendlyFeatures": [
-      "No-touch diving policies",
-      "Coral restoration activities",
-      "Sustainable diving practices"
+      "No-touch policy",
+      "Coral restoration",
+      "Sustainable diving"
     ],
     "maxGroupSize": 10,
     "specialInstructions": [
@@ -55,8 +51,8 @@
     "adventureLevel": "Advanced",
     "includedItems": ["Safari Vehicle", "Meals", "Park Entrance Fees"],
     "ecoFriendlyFeatures": [
-      "Wildlife conservation efforts",
-      "Low-impact travel practices",
+      "Wildlife conservation",
+      "Low-impact travel",
       "Eco-friendly accommodations"
     ],
     "maxGroupSize": 8,
@@ -78,9 +74,9 @@
     "adventureLevel": "Advanced",
     "includedItems": ["Local Guide", "Camping Gear", "Meals"],
     "ecoFriendlyFeatures": [
-      "Conservation-focused tours",
-      "Minimal waste policies",
-      "Wildlife protection initiatives"
+      "Conservation-focused",
+      "Minimal waste",
+      "Wildlife protection"
     ],
     "maxGroupSize": 10,
     "specialInstructions": [
@@ -228,7 +224,7 @@
   },
   {
     "id": 11,
-    "adventureTitle": "Ocean Dive in Great Barrier Reef",
+    "adventureTitle": "Ocean Dive in Barrier Reef",
     "image": "https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW5zfGVufDB8fDB8fHww",
     "categoryName": "Ocean Dives",
     "shortDescription": "Explore the vibrant underwater world of the Great Barrier Reef. This scuba diving adventure takes you through coral gardens, marine life hotspots, and crystal-clear waters. You’ll dive with expert instructors who will guide you through one of the most biodiverse ecosystems on the planet. The adventure emphasizes the importance of coral reef conservation and marine protection efforts.",

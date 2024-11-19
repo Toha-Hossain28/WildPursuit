@@ -8,6 +8,9 @@ import AuthLayout from "./layout/AuthLayout";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import AuthProvider from "./Context/AuthProvider";
+import Adventures from "./pages/Adventures";
+import AdventureLayout from "./layout/AdventureLayout";
+import Adventure from "./pages/Adventure";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +21,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h1>Home</h1>,
+        element: <Adventures />,
+        loader: () => fetch("/Data.json"),
       },
       {
         path: "profile",
@@ -41,6 +45,17 @@ const router = createBrowserRouter([
       {
         path: "signup",
         element: <SignUp />,
+      },
+    ],
+  },
+  {
+    path: "adventures/",
+    element: <AdventureLayout />,
+    children: [
+      {
+        path: ":id",
+        element: <Adventure />,
+        loader: () => fetch("/Data.json"),
       },
     ],
   },
