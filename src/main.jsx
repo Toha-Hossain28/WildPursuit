@@ -4,6 +4,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import MainLayout from "./layout/MainLayout";
 import ErrorPage from "./pages/ErrorPage";
+import AuthLayout from "./layout/AuthLayout";
+import Login from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +26,20 @@ const router = createBrowserRouter([
       {
         path: "update",
         element: <h1>update</h1>,
+      },
+    ],
+  },
+  {
+    path: "auth",
+    element: <AuthLayout />,
+    children: [
+      {
+        path: "signin",
+        element: <SignIn />,
+      },
+      {
+        path: "signup",
+        element: <SignUp />,
       },
     ],
   },

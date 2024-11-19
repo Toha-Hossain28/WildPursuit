@@ -1,14 +1,15 @@
 import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from "../assets/footer-logo.png";
 
 function Footer() {
   return (
-    <footer className="footer footer-center bg-white p-10 relative text-black">
+    <footer className="footer footer-center bg-white p-10 pt-0 relative text-black">
       <aside>
         <div>
-          <img src="footer-logo.png" alt="" className="w-48" />
+          <img src={logo} alt="" className="w-48" />
         </div>
-        <div className="font-bold text-lg absolute top-44 lora">
+        <div className="font-bold text-lg absolute top-32 lora">
           WildPursuit Adventures Ltd.
           <br />
           <p className="font-normal text-base raleway">

@@ -112,7 +112,9 @@ function Navbar() {
             </Link>
           </div>
         </div>
-        <Link className={`btn ${user ? "hidden" : ""}`}>Sign In</Link>
+        <Link to="/auth/signin" className={`btn ${user ? "hidden" : ""}`}>
+          Sign In
+        </Link>
         <Link className={`btn ${user ? "" : "hidden"} btn-outline btn-error`}>
           Log Out
         </Link>
