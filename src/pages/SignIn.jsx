@@ -1,9 +1,12 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
 
 function SignIn() {
   const { user, setUser, userSignIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
   const handleSignIn = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -14,17 +17,22 @@ function SignIn() {
     userSignIn(email, password)
       .then((result) => {
         setUser(result.user);
+        navigate(location.state || "/");
         // console.log(user);
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorMessage);
+        // console.log(errorMessage);
+        toast.error("Login Failed!! Please,try again.");
       });
   };
 
   return (
     <div className="flex flex-col  justify-center items-center bg-evergreen pt-[45px] pb-28 lg:px-0 px-4  rounded-xl">
+      <div>
+        <Toaster />
+      </div>
       <h3 className="lora text-3xl font-bold  mb-10 text-white">Sign In</h3>
       <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl raleway shadow-icyBlue ">
         <form className="card-body" onSubmit={handleSignIn}>

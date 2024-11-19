@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Snowfall from "react-snowfall";
 import { AuthContext } from "../Context/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
 
 function SignUp() {
   const { user, setUser, userSignUp } = useContext(AuthContext);
@@ -23,11 +24,15 @@ function SignUp() {
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        toast.error("Sign Up failed! Please Try again.");
       });
   };
 
   return (
     <div className="flex flex-col  justify-center items-center bg-evergreen pt-[45px] pb-28 lg:px-0 px-4  rounded-3xl">
+      <div>
+        <Toaster />
+      </div>
       <Snowfall color="white" snowflakeCount={100} />
 
       <h3 className="lora text-3xl font-bold  mb-10 text-white">Sign Up</h3>
@@ -82,11 +87,6 @@ function SignUp() {
               className="input input-bordered"
               required
             />
-            <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
-                Forgot password?
-              </a>
-            </label>
           </div>
           <div className="form-control mt-6">
             <button className="btn bg-icyBlue hover:bg-deepOceanBlue text-black hover:text-white">
