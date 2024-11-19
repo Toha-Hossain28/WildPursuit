@@ -32,7 +32,7 @@ function SignIn() {
   const handleGoogle = () => {
     googleLogin().then((result) => {
       setUser(result.user);
-      navigate("/");
+      navigate(location.state || "/");
     });
   };
 

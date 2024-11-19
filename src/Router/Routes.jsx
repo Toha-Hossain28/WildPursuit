@@ -8,6 +8,8 @@ import SignUp from "../pages/SignUp";
 import AdventureLayout from "../layout/AdventureLayout";
 import Adventure from "../pages/Adventure";
 import PrivateRoute from "./PrivateRoute";
+import Profile from "../pages/Profile";
+import UpdateProfile from "../pages/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,36 @@ const router = createBrowserRouter([
       {
         path: "signup",
         element: <SignUp />,
+      },
+      {
+        path: "profile",
+        element: (
+          <PrivateRoute>
+            <Profile />,
+          </PrivateRoute>
+        ),
+      },
+    ],
+  },
+  {
+    path: "/profile",
+    element: <AuthLayout />,
+    children: [
+      {
+        path: "",
+        element: (
+          <PrivateRoute>
+            <Profile />,
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "update",
+        element: (
+          <PrivateRoute>
+            <UpdateProfile />,
+          </PrivateRoute>
+        ),
       },
     ],
   },

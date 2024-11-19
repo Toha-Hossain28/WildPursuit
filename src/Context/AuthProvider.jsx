@@ -9,10 +9,11 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 
 export const AuthContext = createContext();
-const auth = getAuth(app);
+export const auth = getAuth(app);
 
 function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -38,6 +39,14 @@ function AuthProvider({ children }) {
     setLoading(true);
     return signInWithPopup(auth, provider);
   };
+
+  // const userProfileUpdate = (name, photo) => {
+  //   console.log(name, photo);
+  //   return updateProfile(currentUser, {
+  //     displayName: name,
+  //     photoURL: photo,
+  //   });
+  // };
   const authInfo = {
     user,
     setUser,
@@ -46,6 +55,7 @@ function AuthProvider({ children }) {
     userSignOut,
     loading,
     googleLogin,
+    // userProfileUpdate,
   };
 
   useEffect(() => {

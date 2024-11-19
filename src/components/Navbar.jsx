@@ -4,6 +4,7 @@ import { AuthContext } from "../Context/AuthProvider";
 
 function Navbar() {
   const { user, setUser, userSignOut } = useContext(AuthContext);
+  console.log(user);
   return (
     <div className="navbar bg-white lg:py-5 lg:px-5">
       <div className="navbar-start">
@@ -114,7 +115,7 @@ function Navbar() {
       <div className="navbar-end space-x-4">
         <div
           className={`tooltip tooltip-bottom ${user ? "" : "hidden"}`}
-          data-tip={user?.email}
+          data-tip={user?.displayName}
         >
           {/* <button className="btn">Hover me</button> */}
           <div
@@ -125,7 +126,11 @@ function Navbar() {
             <Link to="/profile" className="w-10 rounded-full">
               <img
                 alt="Tailwind CSS Navbar component"
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                src={
+                  user?.photoURL
+                    ? user.photoURL
+                    : "https://i.seadn.io/gcs/files/3085b3fc65f00b28699b43efb4434eec.png?auto=format&dpr=1&w=1000"
+                }
                 className="rounded-full"
               />
             </Link>

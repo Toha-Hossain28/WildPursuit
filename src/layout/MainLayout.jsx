@@ -5,7 +5,6 @@ import Banner from "../components/Banner";
 
 function MainLayout() {
   const data = useLoaderData();
-  // console.log(data);
 
   return (
     <div>

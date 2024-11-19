@@ -2,12 +2,14 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Snowfall from "react-snowfall";
-import { AuthContext } from "../Context/AuthProvider";
+import { auth, AuthContext } from "../Context/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
 import { FaGoogle } from "react-icons/fa";
+import { updateProfile } from "firebase/auth";
 
 function SignUp() {
-  const { user, setUser, userSignUp, googleLogin } = useContext(AuthContext);
+  const { user, setUser, userSignUp, googleLogin, loading } =
+    useContext(AuthContext);
   const [passwordError, setPasswordError] = useState("");
   const navigate = useNavigate();
 
@@ -38,11 +40,23 @@ function SignUp() {
     userSignUp(email, password)
       .then((result) => {
         setUser(result.user);
-        navigate("/");
+
+        updateProfile(auth.currentUser, {
+          displayName: name,
+          photoURL: photoURL,
+        })
+          .then(() => {
+            toast.success("Profile updated successfully!");
+            navigate("/");
+          })
+          .catch((error) => {
+            toast.error("Profile update failed!");
+            console.error("Error updating profile:", error);
+          });
       })
       .catch((error) => {
-        const errorMessage = error.message;
         toast.error("Sign Up failed! Please try again.");
+        console.error("Error during sign-up:", error);
       });
   };
 
