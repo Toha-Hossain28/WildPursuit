@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
@@ -8,6 +8,7 @@ function SignIn() {
   const { user, setUser, userSignIn, googleLogin } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+  const emailRef = useRef();
   const handleSignIn = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -27,6 +28,12 @@ function SignIn() {
         // console.log(errorMessage);
         toast.error("Login Failed!! Please,try again.");
       });
+  };
+
+  const handleForget = (e) => {
+    e.preventDefault();
+    // console.log(emailRef.current.value);
+    navigate("/auth/forgot", { state: emailRef.current.value });
   };
 
   const handleGoogle = () => {
@@ -50,6 +57,7 @@ function SignIn() {
               <span className="label-text">Email</span>
             </label>
             <input
+              ref={emailRef}
               name="email"
               type="email"
               placeholder="email"
@@ -70,9 +78,12 @@ function SignIn() {
               required
             />
             <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
+              <div
+                onClick={handleForget}
+                className="label-text-alt link link-hover"
+              >
                 Forgot password?
-              </a>
+              </div>
             </label>
           </div>
           <div className="form-control mt-6 space-y-2">

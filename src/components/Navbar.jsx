@@ -55,14 +55,14 @@ function Navbar() {
             </li>
             <li>
               <NavLink
-                to="/adventures"
+                to="/profile/update"
                 className={({ isActive }) =>
                   isActive
                     ? " bg-deepOceanBlue text-base font-semibold btn shadow-md outline-none rounded-md text-white"
                     : "text-base btn bg-white border-none shadow-none hover:bg-icyBlue text-black"
                 }
               >
-                Adventures
+                updateProfile
               </NavLink>
             </li>
           </ul>
@@ -99,14 +99,14 @@ function Navbar() {
           </li>
           <li>
             <NavLink
-              to="/adventures"
+              to="/profile/update"
               className={({ isActive }) =>
                 isActive
                   ? " bg-deepOceanBlue text-base font-semibold btn shadow-md outline-none rounded-md text-white"
                   : "text-base btn bg-white border-none shadow-none hover:bg-icyBlue text-black"
               }
             >
-              Adventures
+              updateProfile
             </NavLink>
           </li>
         </ul>

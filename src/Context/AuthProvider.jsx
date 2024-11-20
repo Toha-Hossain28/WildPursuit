@@ -6,6 +6,7 @@ import {
   getAuth,
   GoogleAuthProvider,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -47,6 +48,10 @@ function AuthProvider({ children }) {
   //     photoURL: photo,
   //   });
   // };
+
+  const forgetPassword = (email) => {
+    return sendPasswordResetEmail(auth, email);
+  };
   const authInfo = {
     user,
     setUser,
@@ -55,6 +60,7 @@ function AuthProvider({ children }) {
     userSignOut,
     loading,
     googleLogin,
+    forgetPassword,
     // userProfileUpdate,
   };
 

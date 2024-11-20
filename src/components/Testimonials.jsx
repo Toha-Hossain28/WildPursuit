@@ -26,7 +26,7 @@ const testimonials = [
     id: 3,
     name: "Emily Brown",
     review:
-      "An unforgettable journey! The sustainable practices made me feel proud to be part of it.",
+      "An unforgettable journey! The sustainable practices made me feel proud to be part of it. Love them.",
     rating: 4,
     photo: "https://randomuser.me/api/portraits/women/7.jpg",
   },

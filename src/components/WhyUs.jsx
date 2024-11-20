@@ -1,5 +1,3 @@
-import React from "react";
-
 const WhyUs = () => {
   return (
     <div className="mt-20">
@@ -12,12 +10,12 @@ const WhyUs = () => {
           about the planet
         </p>
       </div>
-      <div className="grid grid-cols-2 py-20 px-10 gap-5">
+      <div className="grid xl:grid-cols-2 grid-cols-1  py-20 px-10 gap-5">
         <div className="col-span-1">
           <img
             src="https://wallpapers.com/images/featured/snow-mountain-ydg6x966wun8nkjs.jpg"
             alt=""
-            className="rounded-xl"
+            className="rounded-xl h-full"
           />
         </div>
         <div className="space-y-4 col-span-1">
@@ -31,7 +29,7 @@ const WhyUs = () => {
               <p>
                 An Eco-Trek is a sustainable trekking experience where you
                 explore nature’s beauty while minimizing environmental impact.
-                On this adventure, you'll learn about local ecosystems,
+                On this adventure, you&apos;ll learn about local ecosystems,
                 conservation efforts, and responsible travel practices.
               </p>
               <ul className="list-disc pl-6">
@@ -66,7 +64,7 @@ const WhyUs = () => {
                 trips.
               </p>
               <ul className="list-disc pl-6">
-                <li>Carrying out "Leave No Trace" practices</li>
+                <li>Carrying out &quot;Leave No Trace&quot; practices</li>
                 <li>Using eco-friendly equipment and gear</li>
                 <li>Educating travelers about sustainable tourism</li>
                 <li>Collaborating with local conservation projects</li>
@@ -105,9 +103,9 @@ const WhyUs = () => {
             <div className="collapse-content text-sm">
               <p>
                 Yes! Our eco-friendly adventures are designed for all levels of
-                experience. Whether you're a seasoned traveler or a beginner,
-                our expert guides will ensure that you have a safe and enjoyable
-                time while respecting nature.
+                experience. Whether you&apos;re a seasoned traveler or a
+                beginner, our expert guides will ensure that you have a safe and
+                enjoyable time while respecting nature.
               </p>
               <ul className="list-disc pl-6">
                 <li>Beginner-friendly treks and activities</li>

@@ -10,6 +10,7 @@ import Adventure from "../pages/Adventure";
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../pages/Profile";
 import UpdateProfile from "../pages/UpdateProfile";
+import ForgetPass from "../pages/ForgetPass";
 
 const router = createBrowserRouter([
   {
@@ -37,14 +38,10 @@ const router = createBrowserRouter([
         path: "signup",
         element: <SignUp />,
       },
-      // {
-      //   path: "profile",
-      //   element: (
-      //     <PrivateRoute>
-      //       <Profile />,
-      //     </PrivateRoute>
-      //   ),
-      // },
+      {
+        path: "forgot",
+        element: <ForgetPass />,
+      },
     ],
   },
   {

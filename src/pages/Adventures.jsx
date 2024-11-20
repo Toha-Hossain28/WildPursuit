@@ -6,10 +6,10 @@ function Adventures() {
   // console.log(data);
   return (
     <div className="my-10 flex flex-col justify-center items-center mx-5">
-      <h1 className="text-4xl font-bold text-evergreen mb-7 mt-7">
+      <h1 className="md:text-4xl text-2xl font-bold text-evergreen mb-7 mt-7">
         Explore Eco-Friendly Adventures
       </h1>
-      <p className="text-lg text-gray-600 mb-10">
+      <p className="md:text-lg text-sm text-gray-600 mb-10">
         Discover unforgettable journeys that protect and celebrate nature.
         Choose your next adventure!
       </p>
