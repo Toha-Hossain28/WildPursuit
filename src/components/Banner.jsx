@@ -11,10 +11,11 @@ function Banner({ data }) {
             Beauty of Nature
           </div>
         </div>
-        <p className="raleway mt-5 font-normal text-sm xl:text-base text-gray-600 lg:text-left xl:ml-0 md:ml-4 text-center w-3/4 lg:w-full ml-0">
+        <p className="raleway mt-5 font-normal text-sm xl:text-base text-gray-600 text-center lg:text-left">
           Embark on eco-friendly adventures that take you beyond the
-          ordinary—trek, dive, and wander sustainably through the world&apos;s
-          most stunning landscapes.
+          ordinary—trek, dive,
+          <br /> and wander sustainably through the world&apos;s most stunning
+          landscapes.
         </p>
       </div>
       <div className="col-span-7 p-10 lg:w-auto w-full">
