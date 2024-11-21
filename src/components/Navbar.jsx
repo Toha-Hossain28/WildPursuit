@@ -123,7 +123,7 @@ function Navbar() {
             role="button"
             className="btn btn-ghost btn-circle avatar"
           >
-            <Link to="/profile" className="w-10 rounded-full">
+            <Link to="/profile" className="w-10 rounded-full overflow-hidden">
               <img
                 alt="Tailwind CSS Navbar component"
                 src={

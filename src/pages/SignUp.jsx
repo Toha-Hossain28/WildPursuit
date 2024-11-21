@@ -50,7 +50,7 @@ function SignUp() {
             navigate("/");
           })
           .catch((error) => {
-            toast.error("Profile update failed!");
+            // toast.error("Profile update failed!");
             console.error("Error updating profile:", error);
           });
       })
